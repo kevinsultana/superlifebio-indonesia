@@ -104,7 +104,7 @@ export default function Header() {
                 <div
                   className={`transition-all duration-500 ease-in-out overflow-hidden ${
                     openSubmenus[index]
-                      ? "opacity-100 max-h-40 translate-y-0"
+                      ? "opacity-100 max-h-60 translate-y-0"
                       : "opacity-0 max-h-0 -translate-y-2 pointer-events-none"
                   }`}
                 >

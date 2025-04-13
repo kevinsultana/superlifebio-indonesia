@@ -1,6 +1,6 @@
 import React from "react";
-import ImageBox from "../components/ImageBox";
-import BtnAction from "../components/BtnAction";
+import ImageBox from "../../components/ImageBox";
+import BtnAction from "../../components/BtnAction";
 
 export default function TentangKami() {
   return (

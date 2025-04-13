@@ -1,5 +1,5 @@
 import React from "react";
-import BtnAction from "../components/BtnAction";
+import BtnAction from "../../components/BtnAction";
 
 export default function HeroSection() {
   return (
