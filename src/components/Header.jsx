@@ -26,7 +26,7 @@ export default function Header() {
       <div className="flex justify-between items-center my-2 mx-8 md:mx-16 lg:mx-32">
         <Link to="/">
           <img
-            src="https://superlifebioindonesia.com/wp-content/uploads/2023/07/cropped-logo-sbi.png"
+            src="/logosuperlife.png"
             alt="logo superlife"
             className="w-12 lg:w-16"
           />
