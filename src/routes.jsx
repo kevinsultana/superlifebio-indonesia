@@ -14,6 +14,7 @@ import Ketenaran from "./pages/Prestasi/Ketenaran";
 import Kampanye from "./pages/Acara/Kampanye";
 import KTTKepemimpinan from "./pages/Acara/KTTKepemimpinan";
 import KantorGlobal from "./pages/KantorGlobal";
+import Test from "./pages/Test";
 
 export const AppRoutes = () => (
   <Routes>
@@ -32,5 +33,6 @@ export const AppRoutes = () => (
     <Route path="/kampanye" element={<Kampanye />} />
     <Route path="/ktt-kepemimpinan" element={<KTTKepemimpinan />} />
     <Route path="/kantor-global" element={<KantorGlobal />} />
+    <Route path=":sppc/:companyCode/:dealerRepCode" element={<Test />} />
   </Routes>
 );
