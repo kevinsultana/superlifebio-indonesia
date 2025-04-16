@@ -11,57 +11,81 @@ import { IoMail } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-center items-center py-8 bg-black">
-      {/* logo */}
-      <div className="w-1/4">
-        <img src="footLogosuperlife.png" alt="footer logo" />
-      </div>
-
-      {/* links */}
-      <div className="text-white text-center">
-        <h1>Links</h1>
-        <ul>
-          {listTautan.map((item, index) => (
-            <li key={index}>
-              <a href={item.linkMenu}>{item.name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* contact */}
-      <div className="text-white text-center ">
-        <h1>Contact</h1>
-        <ul className="mx-8 max-w-72">
-          <li className="flex gap-8 ">
-            <FaMapMarkerAlt className="fill-red-600 w-21 h-7" />
-            <p className="text-left">
-              Gedung Pusat Perfilman Usmar Ismail Jl. H. R. Rasuna Said No.22
-              Kavling C, RT.2/RW.5, Karet Kuningan, Kecamatan Setiabudi, Kota
-              Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940
-            </p>
-          </li>
-          <li className="flex gap-8 ">
-            <FaPhoneAlt className="fill-red-600 w-auto h-auto" />
-            <p className="text-left">0812-3456-7890</p>
-          </li>
-          <li className="flex gap-8 ">
-            <IoMail className="fill-red-600 w-auto h-auto" />
-            <p className="text-left">test.email@email.com</p>
-          </li>
-        </ul>
-      </div>
-
-      {/* follow us */}
-      <div className="text-white text-center">
-        <h1>Follow Us</h1>
-        <div className="flex gap-8">
-          <FaFacebook />
-          <FaInstagram />
-          <FaYoutube />
+    <footer className="bg-black text-white px-4 py-10">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between gap-10">
+        {/* Logo */}
+        <div className="flex flex-col items-center md:items-start md:w-1/4">
+          <img
+            src="/footLogosuperlife.png"
+            alt="footer logo"
+            className="w-24 md:w-32"
+          />
         </div>
-        <h1>© 2023 SuperLife World Sdn Bhd</h1>
+
+        {/* Tautan */}
+        <div className="text-center md:text-left md:w-1/4">
+          <h2 className="font-semibold uppercase mb-3 text-lg">Tautan</h2>
+          <ul className="space-y-1">
+            {listTautan.map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.linkMenu}
+                  className="hover:text-red-500 transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Kontak */}
+        <div className="text-center md:text-left md:w-1/3">
+          <h2 className="font-semibold uppercase mb-3 text-lg">Kontak</h2>
+          <div className="flex flex-col items-center">
+            <ul className="space-y-4 text-sm w-2/3 md:w-auto text-left">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="mt-1 text-red-600" />
+                <p>
+                  Gedung Pusat Perfilman Usmar Ismail
+                  <br />
+                  Jl. H. R. Rasuna Said No.22 Kavling C, Karet Kuningan, Jakarta
+                  Selatan
+                </p>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaPhoneAlt className="text-red-600" />
+                <p>0812-3456-7890</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <IoMail className="text-red-600" />
+                <p>test.email@email.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Sosial Media */}
+        <div className="text-center md:text-left md:w-1/6">
+          <h2 className="font-semibold uppercase mb-3 text-lg">Follow Us</h2>
+          <div className="flex justify-center md:justify-start gap-5 text-xl">
+            <a href="#" aria-label="Facebook">
+              <FaFacebook className="hover:text-red-500" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FaInstagram className="hover:text-red-500" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <FaYoutube className="hover:text-red-500" />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+
+      {/* Copyright */}
+      <div className="mt-8 border-t border-gray-700 pt-4 text-center text-xs text-gray-400">
+        2025 © SuperLife Bio Indonesia. All Rights Reserved.
+      </div>
+    </footer>
   );
 }

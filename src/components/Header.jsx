@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { listMenu } from "../data/listMenu";
 
 export default function Header() {
-  // State untuk mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // State untuk toggle submenu di mobile
   const [openSubmenus, setOpenSubmenus] = useState({});
 
   const toggleMobileMenu = () => {
@@ -21,7 +19,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white/80 w-full fixed lg:flex-row lg:flex lg:justify-between">
+    <header className="bg-white/90 w-full fixed z-20 lg:flex-row lg:flex lg:justify-between">
       {/* Header umum */}
       <div className="flex justify-between items-center my-2 mx-8 md:mx-16 lg:mx-32">
         <Link to="/">
@@ -60,13 +58,23 @@ export default function Header() {
           {listMenu.map((item, index) => (
             <li key={index}>
               <div className="flex justify-between items-center pb-2 border-b border-stone-200">
-                {/* Link utama (jika submenu ada, tampilkan dengan font-bold) */}
-                {item.linkMenu.startsWith("http") ? (
+                {/* Jika item.linkMenu === "#" maka pakai button untuk toggle submenu */}
+                {item.linkMenu === "#" ? (
+                  <button
+                    type="button"
+                    onClick={() => toggleSubmenu(index)}
+                    className={`text-sm text-left w-full ${
+                      item.listSubMenu.length > 0 ? "font-bold" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : item.linkMenu.startsWith("http") ? (
                   <a
                     href={item.linkMenu}
                     target="_blank"
                     rel="noreferrer"
-                    className={`text-xs ${
+                    className={`text-sm ${
                       item.listSubMenu.length > 0 ? "font-bold" : ""
                     }`}
                   >
@@ -76,7 +84,7 @@ export default function Header() {
                   <Link
                     to={item.linkMenu}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-xs ${
+                    className={`text-sm ${
                       item.listSubMenu.length > 0 ? "font-bold" : ""
                     }`}
                   >
@@ -99,7 +107,7 @@ export default function Header() {
                 )}
               </div>
 
-              {/* Submenu Mobile dengan animasi */}
+              {/* Submenu Mobile */}
               {item.listSubMenu.length > 0 && (
                 <div
                   className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -114,7 +122,7 @@ export default function Header() {
                         <Link
                           to={sub.path}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="hover:bg-stone-100 px-2 py-1 block"
+                          className="hover:bg-stone-100 px-2 py-1 block md:text-base "
                         >
                           {sub.name}
                         </Link>
@@ -157,13 +165,13 @@ export default function Header() {
 
             {/* Submenu muncul saat hover (desktop) */}
             {item.listSubMenu.length > 0 && (
-              <div className="absolute -left-1 mt-7 w-44 border-t-2 border-t-red-400 hidden group-hover:block bg-white shadow-md">
+              <div className="absolute -left-1 mt-7  w-56 border-t-2 border-t-red-400 hidden group-hover:block bg-white shadow-md">
                 <ul className="py-2">
                   {item.listSubMenu.map((sub, subIndex) => (
                     <li key={subIndex}>
                       <Link
                         to={sub.path}
-                        className="block px-4 py-2 text-sm hover:bg-stone-100"
+                        className="block px-4 py-2  hover:bg-stone-100 text-base"
                       >
                         {sub.name}
                       </Link>

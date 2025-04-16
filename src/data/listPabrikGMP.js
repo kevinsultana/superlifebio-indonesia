@@ -1,0 +1,32 @@
+export const listPabrikGMP = [
+  "Pada bulan Mei 2023, SuperLife merayakan pencapaian penting dengan diresmikannya fasilitas manufaktur GMP (Good Manufacturing Practice) dan HACCP (Hazard Analysis and Critical Control Points) yang sangat kami nantikan di Malaysia. Peristiwa penting ini menandakan langkah maju yang penting dalam lintasan organisasi kami, yang terwujud dalam waktu kurang dari lima tahun sejak SuperLife didirikan.",
+  "Pencapaian ini menegaskan kembali dedikasi kami yang tak tergoyahkan terhadap kemajuan kemampuan R&D (Penelitian & Pengembangan) kami. Melalui komitmen inilah kami dengan cermat merancang, membuat, dan memvalidasi produk dengan ketelitian klinis, yang bertujuan untuk meningkatkan kesehatan dan kesejahteraan pelanggan dan anggota kami.",
+  "Kehadiran fasilitas manufaktur canggih ini menempatkan SuperLife pada posisi yang lebih tinggi dalam industri penjualan langsung, selaras dengan misi kami untuk menawarkan produk yang teruji dan terbukti meningkatkan kesejahteraan pelanggan kami. Titik fokus dari upaya berkelanjutan kami adalah merintis pengembangan produk dan teknologi berbasis sel induk tanaman yang mutakhir.",
+];
+
+export const listPhotoPabrikGMP = [
+  "/pabrikgmp.png",
+  "/pabrikgmp1.png",
+  "/pabrikgmp2.png",
+  "/pabrikgmp3.png",
+  "/pabrikgmp4.png",
+  "/pabrikgmp5.png",
+  "/pabrikgmp7.png",
+  "/pabrikgmp8.png",
+  "/pabrikgmp9.png",
+  "/pabrikgmp10.png",
+  "/pabrikgmp11.png",
+  "/pabrikgmp12.png",
+  "/pabrikgmp13.png",
+  "/pabrikgmp14.png",
+  "/pabrikgmp15.png",
+  "/pabrikgmp16.png",
+  "/pabrikgmp17.png",
+  "/pabrikgmp18.png",
+  "/pabrikgmp19.png",
+  "/pabrikgmp20.png",
+  "/pabrikgmp21.png",
+  "/pabrikgmp22.png",
+  "/pabrikgmp23.png",
+  "/pabrikgmp24.png",
+];

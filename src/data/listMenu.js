@@ -1,7 +1,7 @@
 export const listMenu = [
   {
     name: "Tentang Kami",
-    linkMenu: "/about-us",
+    linkMenu: "#",
     listSubMenu: [
       { name: "Cerita Kami", path: "/cerita-kami" },
       { name: "Pendiri", path: "/pendiri" },
@@ -13,7 +13,7 @@ export const listMenu = [
   },
   {
     name: "Produk",
-    linkMenu: "/product",
+    linkMenu: "#",
     listSubMenu: [
       { name: "Superlife Total Care 30", path: "/STC30" },
       { name: "Superlife Immune Care", path: "/SIC" },
@@ -26,7 +26,7 @@ export const listMenu = [
   },
   {
     name: "Prestasi",
-    linkMenu: "/prestasi",
+    linkMenu: "#",
     listSubMenu: [
       { name: "Peringkat Kepemimpinan", path: "/peringkat-kepemimpinan" },
       { name: "Ketenaran", path: "/ketenaran" },
@@ -34,7 +34,7 @@ export const listMenu = [
   },
   {
     name: "Acara",
-    linkMenu: "/acara",
+    linkMenu: "#",
     listSubMenu: [
       { name: "Kampanye", path: "/kampanye" },
       { name: "KTT Kepemimpinan", path: "/ktt-kepemimpinan" },

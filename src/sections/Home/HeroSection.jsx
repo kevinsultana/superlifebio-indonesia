@@ -4,14 +4,6 @@ import BtnAction from "../../components/BtnAction";
 export default function HeroSection() {
   return (
     <div className="pt-16 pb-6 bg-stone-100 md:bg-transparent md:pb-0 lg:pb-40 lg:pt-20 ">
-      <div>
-        <img
-          src="/whatsappicon.png"
-          alt="Whatsapp"
-          className="fixed bottom-2 right-2 w-12 md:w-16 md:bottom-4 md:right-4"
-        />
-      </div>
-
       {/* mobile image */}
       <div className="md:hidden lg:hidden">
         <img src="/panel1_mobile.png" alt="hero" className="w-full h-80" />

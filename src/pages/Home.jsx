@@ -8,6 +8,7 @@ import KenapaKami from "../sections/Home/KenapaKami";
 import Testimonial from "../sections/Home/Testimonial";
 import Penghargaan from "../sections/Home/Penghargaan";
 import HubungiKami from "../sections/Home/HubungiKami";
+import CTAWhastapp from "../components/CTAWhastapp";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonial />
       <Penghargaan />
       <HubungiKami />
+      <CTAWhastapp />
       <Footer />
     </div>
   );
