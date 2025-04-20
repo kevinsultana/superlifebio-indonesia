@@ -26,7 +26,7 @@ export default function Header() {
           <img
             src="/logosuperlife.png"
             alt="logo superlife"
-            className="w-12 lg:w-16"
+            className="w-12 lg:w-20"
           />
         </Link>
 

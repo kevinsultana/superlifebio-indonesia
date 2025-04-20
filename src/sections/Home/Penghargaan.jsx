@@ -40,7 +40,7 @@ export default function Penghargaan() {
                   alt={`Penghargaan ${index + 1}`}
                   className="w-full max-h-52 object-contain mb-4 rounded shadow-md"
                 />
-                <p className="text-sm text-gray-700">{item.caption}</p>
+                <p className="text-sm text-gray-700">{item.title}</p>
               </div>
             </SwiperSlide>
           ))}

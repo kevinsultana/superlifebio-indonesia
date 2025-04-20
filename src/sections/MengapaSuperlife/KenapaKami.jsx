@@ -29,10 +29,6 @@ export default function KenapaKami() {
           </div>
         ))}
       </div>
-
-      <div className="flex justify-center py-4">
-        <BtnAction textAction={"Selengkapnya"} />
-      </div>
     </div>
   );
 }
