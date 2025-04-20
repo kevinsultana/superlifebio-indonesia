@@ -8,7 +8,6 @@ export default function Content() {
         Pabrik GMP
       </h1>
 
-      {/* Deskripsi dan gambar utama */}
       <div className="bg-red-100 p-6 rounded-2xl">
         <img
           src="/pabrikgmp.png"
