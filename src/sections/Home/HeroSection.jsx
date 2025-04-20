@@ -3,7 +3,7 @@ import BtnAction from "../../components/BtnAction";
 
 export default function HeroSection() {
   return (
-    <div className="pt-16 pb-6 bg-stone-100 md:bg-transparent md:pb-0 lg:pb-40 lg:pt-20 ">
+    <div className="pt-16 pb-6 bg-stone-100 md:bg-transparent md:pb-0 lg:pb-40 lg:pt-24 ">
       {/* mobile image */}
       <div className="md:hidden lg:hidden">
         <img src="/panel1_mobile.png" alt="hero" className="w-full h-80" />
