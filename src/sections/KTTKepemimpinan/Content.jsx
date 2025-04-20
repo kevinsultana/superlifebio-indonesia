@@ -3,7 +3,7 @@ import React from "react";
 export default function Content() {
   return (
     <div className="px-4 md:px-12">
-      <h1 className="text-2xl md:text-3xl font-bold text-center uppercase my-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Leadership Summit
       </h1>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

@@ -4,7 +4,7 @@ import { listPabrikGMP, listPhotoPabrikGMP } from "../../data/listPabrikGMP";
 export default function Content() {
   return (
     <div className="mx-4 md:mx-8 pb-8">
-      <h1 className="text-2xl font-bold text-center py-8 uppercase">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Pabrik GMP
       </h1>
 

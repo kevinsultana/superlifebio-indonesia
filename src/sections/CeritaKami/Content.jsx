@@ -8,7 +8,7 @@ export default function Content() {
 
   return (
     <div className="pb-8">
-      <h1 className="text-center py-8 uppercase font-bold text-2xl">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Cerita Kami
       </h1>
       <div className="text-justify mx-8 md:mx-16 lg:mx-36">

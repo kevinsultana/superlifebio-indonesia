@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <div>
       <div className="mx-4 md:mx-12 lg:mx-32 my-8">
-        <h1 className="text-xl md:text-2xl font-bold uppercase text-center">
+        <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
           Peringkat kepemimpinan
         </h1>
         <img

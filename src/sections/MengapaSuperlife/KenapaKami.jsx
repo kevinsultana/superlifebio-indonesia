@@ -5,7 +5,7 @@ import BtnAction from "../../components/BtnAction";
 export default function KenapaKami() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl uppercase font-bold text-center mb-6 md:mb-8">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         mengapa <span className="text-red-600">superlife ?</span>
       </h1>
 

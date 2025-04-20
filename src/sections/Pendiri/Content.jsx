@@ -4,7 +4,7 @@ import { listFounder } from "../../data/listFounder";
 export default function Content() {
   return (
     <div className="px-4 md:px-12 lg:px-32">
-      <h1 className="uppercase font-bold text-red-600 text-center text-3xl my-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Pendiri
       </h1>
       <div className="flex flex-col gap-8">

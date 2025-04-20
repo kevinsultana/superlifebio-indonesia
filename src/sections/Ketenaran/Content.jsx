@@ -4,7 +4,7 @@ import { listCountry } from "../../data/listCountry";
 export default function Content() {
   return (
     <div className="mt-8 px-4 md:px-12">
-      <h1 className="text-xl md:text-2xl font-bold text-center uppercase mb-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Ketenaran
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

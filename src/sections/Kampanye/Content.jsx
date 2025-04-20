@@ -16,7 +16,7 @@ export default function Content() {
 
   return (
     <div className="px-4 md:px-12">
-      <h1 className="text-2xl md:text-3xl font-bold text-center uppercase my-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         Kampanye
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

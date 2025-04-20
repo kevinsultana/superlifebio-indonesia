@@ -4,7 +4,7 @@ import { listPenghargaan } from "../../data/listPenghargaan";
 export default function Content() {
   return (
     <div className="px-4 md:px-12 lg:px-32 my-6">
-      <h1 className="uppercase text-2xl md:text-3xl font-bold text-center mb-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-center py-8 uppercase">
         penghargaan internasional
       </h1>
       {listPenghargaan.map((item, index) => (
